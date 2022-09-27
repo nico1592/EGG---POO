@@ -9,6 +9,7 @@ import Entidades.Perro;
 import Entidades.Persona;
 import Servicio.Creador;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -17,6 +18,8 @@ import java.util.ArrayList;
 public class main {
 
     public static void main(String[] args) {
+
+        Scanner leer = new Scanner(System.in);
 
         Creador creador = new Creador();
         ArrayList<Persona> personas = new ArrayList<>();
@@ -32,5 +35,9 @@ public class main {
             System.out.println(p);
         }
     }
+
+    
+
+    
 
 }
