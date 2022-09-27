@@ -5,6 +5,8 @@
  */
 package Entidades;
 
+import Enum_Per.Enum_Perro;
+
 /**
  *
  * @author nico_
@@ -16,9 +18,19 @@ public class Perro {
     private String raza;
     private int edad;
     private float tamaño;
+    private Enum_Perro Enum_Perro;
 
     // Constructor
     public Perro() {
+    }
+
+    public Perro(String nombre, String raza, int edad, float tamaño, Enum_Perro Enum_Perro) {
+        this.nombre = nombre;
+        this.raza = raza;
+        this.edad = edad;
+        this.tamaño = tamaño;
+        this.Enum_Perro = Enum_Perro;
+
     }
 
     public Perro(String nombre, String raza, int edad, float tamaño) {
@@ -61,7 +73,13 @@ public class Perro {
         this.tamaño = tamaño;
     }
 
-   
+    public Enum_Perro getEnum_Perro() {
+        return Enum_Perro;
+    }
+
+    public void setEnum_Perro(Enum_Perro Enum_Perro) {
+        this.Enum_Perro = Enum_Perro;
+    }
 
     // toString
     @Override

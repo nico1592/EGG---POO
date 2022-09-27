@@ -14,8 +14,8 @@ import java.util.Scanner;
  * @author nico_
  */
 public class Creador {
-    
-     private Scanner scanner = new Scanner(System.in);
+
+    private Scanner scanner = new Scanner(System.in);
 
     public Persona crearPersona() {
         System.out.println("Ingrese datos de la persona");
@@ -43,4 +43,10 @@ public class Creador {
         return new Perro(nombre, raza, edad, tamaño);
     }
     
+    public void adoptar(){
+        System.out.println("Ingrese la raza a adoptar");
+        String adoptar = scanner.next();
+        
+    }
+
 }
