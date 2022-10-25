@@ -43,10 +43,8 @@ public class Creador {
         return new Perro(nombre, raza, edad, tamaño);
     }
     
-    public void adoptar(){
-        System.out.println("Ingrese la raza a adoptar");
-        String adoptar = scanner.next();
+   
         
     }
 
-}
+
